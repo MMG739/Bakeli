@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.body-bg-img{
+    background-image: url("drapeau-senegal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.body-bg-color{
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.form-left {
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+.form-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.inline {
+    display: flex;
+    gap: 10px;
+}
+
+.inline input {
+    width: calc(50% - 5px);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    width: 50%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #555;
+}
+.form-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sélection de l'espace de restauration */
+.space-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.space-selection button {
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.space-selection .active {
+    background-color: red;
+    color: white;
+    border: none;
+}

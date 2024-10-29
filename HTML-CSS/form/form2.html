@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Dinner Booking Form</title>
+</head>
+<body class="body-bg-color">
+    <div class="container">
+        <div class="form-left">
+            <img src="Chef-Edmond.jpg" alt="Registration Image">
+        </div>
+        <div class="form-right">
+            <h2>Dinner Booking Form</h2>
+            <form action="" method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                
+                <label for="time">Time:</label><br>
+                <select id="time" name="time" required>
+                    <option value="18:00">18:00 </option>
+                    <option value="18:30">18:30 </option>
+                    <option value="19:00">19:00 </option>
+                    <option value="19:30">19:30 </option>
+                    <option value="20:00">20:00 </option>
+                    <option value="20:30">20:30 </option>
+                    <option value="21:00">21:00 </option>
+                </select><br><br>
+                
+                <div class="form-group">
+                    <label>Select Your Dining Space</label>
+                    <div class="space-selection">
+                        <button type="button">2</button>
+                        <button type="button" class="active">4 Person</button>
+                        <button type="button">6</button>
+                        <button type="button">8</button>
+                        <button type="button">10</button>
+                    </div>
+                </div>
+                <label for="requests">Special Requests:</label><br>
+                <div class="form-btn">
+                    <input class="btn" type="submit" value="Book Now">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
